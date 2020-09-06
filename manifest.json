@@ -1,0 +1,13 @@
+{
+  "name": "Github Page Link",
+  "version": "1.0",
+  "description": "Add a link to repository's github page",
+  "permissions": ["https://github.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["inject-gh-page-link.js"]
+    }
+  ],
+  "manifest_version": 2
+}
